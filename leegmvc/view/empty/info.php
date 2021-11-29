@@ -1,24 +1,4 @@
 <?php
-	$horseId = $_GET["horseId"];
-	$horse = GetHorse($horseId);
-	$userId = $_GET["userId"];
-	$user = GetUser($userId);
-
-	if($horse["owner"] == ""){
-		$text = "Dit paard kan ingeplant worden";
-		$planText = "Plan dit paard in";
-		$check = "ja";
-	}	
-	else if($horse["owner"] == $user["username"]){
-		$text = "Ingeplande tijd: $horse[tijd] <br> <br> U heeft dit paard ingeplant";
-		$planText = "Beheer planning";
-		$check = "al";
-	}
-	else{
-		$text = "Ingeplant door: $horse[owner]";
-		$check = "nee";
-	}
-
 ?>
 <!DOCTYPE html>
 <html>

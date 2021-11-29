@@ -2,8 +2,6 @@
 	$userId = $_GET["userId"];
 
 	$rows = GetHorsesOfUser($userId);
-
-
 ?>
 <!DOCTYPE html>
 <html>

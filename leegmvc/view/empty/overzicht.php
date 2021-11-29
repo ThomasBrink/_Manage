@@ -1,8 +1,4 @@
 <?php
-	$userId = $_GET["userId"];
-	$horses = GetHorses();
-	$user = GetUser($userId);
-
 ?>
 <!DOCTYPE html>
 <html>

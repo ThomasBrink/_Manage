@@ -1,28 +1,4 @@
-<?php   
-$users = GetUsers();
-$ErrorText = " ";
-  	if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $username = $_POST["v1"];
-        $password = $_POST["v2"];
-
-        $data = array(
-        	"username" => $username,
-        	"password" => $password
-        );
-
-        $inlogRow = GetInlog($data);
-
-        $user = GetUser($inlogRow["id"]);
-
-        var_dump($user["id"]);
-
-        if($inlogRow != NULL){
-        	header("Location: overzicht?userId=".$user["id"]);
-        }
-        else{
-        	$ErrorText = "Username or password is incorrect";
-        }
-    }
+<?php
 ?>
 <!DOCTYPE html>
 <html>
