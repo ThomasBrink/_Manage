@@ -1,1 +1,0 @@
-alert('Welkom in je MVC');
